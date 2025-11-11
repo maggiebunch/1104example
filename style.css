@@ -1,0 +1,96 @@
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* The rules above fully reset our document so we don't need to worry about math */
+
+h1 {
+	text-align: center;
+	  font-family: "DM Serif Display", serif;
+}
+
+.navbar ul {
+	list-style-type: none;
+	background-color: darkolivegreen;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar a {
+	color: floralwhite;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: black;
+}
+
+.navbar li {
+	float: left;
+}
+
+#content-area {
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	margin: 10px 20px;
+	max-width: 1200px;
+}
+
+#headline {
+	margin-bottom: 30px;
+}
+
+.bodycopy {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.6;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+
+.media-adjust {
+	width: 650px;
+	float: right;
+	padding: 0 15px;
+}
+
+@media (max-width: 950px) {
+	.media-adjust {
+		width:450px;
+	}
+	.media-adjust iframe {
+		height: 250px;
+	}
+}
+
+@media (max-width: 600px) {
+	.media-adjust {
+		width: 100%;
+		padding: 0;
+		float: none;
+	}
+
+	.media-adjust iframe {
+		height: 250px;
+	}
+
+.bodycopy {
+	font-size: 1.2rem;
+}
+
+}
